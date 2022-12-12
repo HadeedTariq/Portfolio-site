@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Kanit:wght@300&family=La+Belle+Aurore&family=Lato:ital,wght@0,700;0,900;1,900&family=Martian+Mono:wght@500&family=Nanum+Gothic:wght@800&family=Nerko+One&family=Nunito:ital,wght@1,200&family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+}
+.logoBtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 3px 13px;
+}
+.lgBtn{
+    border: none;
+    font-size: 40px;
+    color: rgb(255, 234, 0);
+    cursor: pointer;
+}
+.lgBtn:hover{
+    color: rgb(255, 5, 218);
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+nav {
+    background: linear-gradient(#57536e,#00cfffde);
+    width: 230px; 
+    height: 100vh;
+    transition: 0.7s;
+    transform: translate(-105%);
+}
+.nav2{
+    transform: translate(0);
+    transition: 0.7s;
+}
+ul{
+    padding-top: 60px;
+    padding-left: 13px;
+}
+li {
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 13px 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+li a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+    color: #f3ff0b;
+}
+
+.main {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    padding-left: 4px;
+}
+
+.developerInfo {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+
+.info {
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    color:white;
+}
+
+.name {
+    font-size: 50px;
+    font-family: 'Martian Mono', monospace;
+    color: rgb(5 184 245);
+}
+
+.about {
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color:white;
+}
+
+.moreabout {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color:white;
+}
+.pk{
+    padding: 9px 0px;
+}
+.devimg img {
+    margin-top: 5%;
+    height: 40vh;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    margin: 0px 10px;
+    padding: 9px 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: rgb(52, 140, 234);
+    color: white;
+    border: none;
+    box-shadow: 0px 5px 6px -4px #000000;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: rgb(216, 213, 213);
+    color: rgb(6, 129, 244);
+    transition: 0.5s;
+}
+@media screen and (max-width:1052px){
+    .developerInfo {
+        height: 70vh;
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .devInfo {
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 24px;
+    }
+    .name{
+        font-size: 35px;
+    }
+    .about{
+        font-size: 19px;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .moreabout{
+        font-size: 19px;
+    }
+    .buttons{
+        margin-top: 7px;
+    }
+    .buttons button {
+        margin: 7px 2px;
+        padding: 9px 10px;
+        font-size: 12px;
+        border-radius: 12px;
+        background-color: rgb(52, 140, 234);
+        color: white;
+        border: none;
+        box-shadow: 0px 5px 6px -4px #000000;
+        cursor: pointer;
+    }
+    .navbar{
+        width: 5vw;
+    }
+}
+@media screen and (max-width:729px){
+    .main {
+        height: 100vh;
+        display: flex;
+        margin: auto;
+        padding-left: 4px;
+    }
+    .devimg img {
+        margin-top: 35%;
+        height: 199px;
+    }
+    .moreabout {
+        font-size: 14px;
+    }
+    .about {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:654px){
+    .devInfo {
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:543px){
+    .logoBtn {
+        padding: 3px 40px;
+    }
+    body{
+        background-color: black;
+    }
+    .devimg{
+        position: absolute;
+        bottom: -100px;
+}
+.devimg img{
+    margin-top: 0;
+    height: 277px;
+}
+.logoBtn {
+    padding: 3px 0px;
+}
+.navbar {
+    width: 2vw;
+}
+.developerInfo {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+}
+.nav2{
+    position: absolute;
+}
+nav {
+    background: linear-gradient(#57536e,#00cfffde);
+    width: 176px;
+    height: 116vh;
+    transition: 0.7s;
+    transform: translate(-105%);
+    position: absolute;
+}
+}
+/* For contact.html css */
+.contactform{
+    /* border: 2px solid black; */
+    margin: 20px 30px;
+    /* height: 90vh; */
+    /* width: 57vw; */
+}
+.container1 {
+    display: flex;
+    background: url('https://images.unsplash.com/photo-1555679427-1f6dfcce943b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80') center center;
+    background-size: cover;
+}
+.lgBtn2{
+    border: none;
+    font-size: 40px;
+    color: rgb(255, 250, 250);
+    cursor: pointer;
+}
+.lgBtn2:hover{
+    color: rgb(255, 0, 217);
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+.query{
+    margin: 3px 10px;
+}
+#ct{
+    /* margin: 5px 0px; */
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+}
+.names{
+    padding: 10px 0px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inp{
+    padding: 4px 10px;
+    width: 50vw;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+.label{
+    margin: 10px;
+}
+.checkbox{
+    display: flex;
+}
+.check{
+    margin-right: 10px;
+}
+.btn{
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    border: none;
+    cursor: pointer; box-shadow: 0px 5px 6px -4px #000000;
+}
+.btn:hover{
+    background-color: rgb(216, 213, 213);
+    color: rgb(6, 129, 244);
+    transition: 0.5s;
+}
+.main1{
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    padding-left: 4px;
+   
+}
+.pip{
+    color: white;
+    font-size: 25px;
+}
+@media screen and  (max-width:706px){
+    .inp {
+        padding: 4px 10px;
+        width: 80vw;
+        font-size: 15px;
+        margin-bottom: 26px;
+    }
+    .contactform{
+        margin: 0;
+    }
+    .label{
+        margin: 0;
+    }
+    .names{
+        font-size: 25px;
+    }
+    .pip{
+        font-size: 20px;
+    }
+}
+@media screen and  (max-width:288px){
+    #ct {
+        margin: 5px 0px;
+        font-size: 23px;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+/* intro.html css */
+.container2{
+    display: flex;
+    /* background-color: black; */
+}
+.infocontainer{
+    display: flex;
+}
+.main2{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 0;
+    padding-left: 0px;
+}
+.lgBtn3{
+    border: none;
+    font-size: 40px;
+    color: rgb(224, 233, 253);
+    cursor: pointer;
+}
+.lgBtn3:hover{
+    color: rgb(255, 0, 217);
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-left: 30px; */
+    color: white;
+}
+.h1{
+      margin: 10px 12px;
+      font-weight: light;
+      font-size: 40px;
+      color: white;
+}
+.para{
+    margin: 10px 12px;
+    font-size: 24px;
+    padding-right: 20px;
+}
+.skillF{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.skill{
+    margin: 0px 10px;
+}
+.sk1{
+    background-color: rgb(244, 244, 46);
+    height: 6px;
+    width: 400px;
+}
+.sk2{
+    background-color: #76c9f4;
+    height: 6px;
+    width: 350px;
+}
+.sk3{
+    background-color: red;
+    height: 6px;
+    width: 450px;
+}
+.project{
+    border: 2px solid yellow;
+    height: 8pc;
+    width: 8pc;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+#body2{
+    background: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')center center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+@media screen and (max-width:823px)  {
+    #body2{
+        height: 160vh;
+    }
+    .project{
+        height: 7pc;
+    }
+}
+@media screen and (max-width:380px)  {
+    #body2{
+        height: 250vh;
+    }
+}
